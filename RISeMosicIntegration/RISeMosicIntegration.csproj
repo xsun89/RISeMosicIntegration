@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RISeMosicIntegration</RootNamespace>
+    <AssemblyName>RISeMosicIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>mosaicProxy.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Newtonsoft.Json\v4.0_11.0.0.0__30ad4fe6b2a6aeed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Webr.CoreServices, Version=8.1.3.0, Culture=neutral, PublicKeyToken=f8eaf8c36f0d6c03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Webr.CoreServices\v4.0_8.1.3.0__f8eaf8c36f0d6c03\Webr.CoreServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Webr.Layout, Version=8.1.3.0, Culture=neutral, PublicKeyToken=f8eaf8c36f0d6c03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Webr.Layout\v4.0_8.1.3.0__f8eaf8c36f0d6c03\Webr.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Webr.TypeSystem, Version=8.1.3.0, Culture=neutral, PublicKeyToken=f8eaf8c36f0d6c03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Webr.TypeSystem\v4.0_8.1.3.0__f8eaf8c36f0d6c03\Webr.TypeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Webr.WOM5, Version=8.1.3.0, Culture=neutral, PublicKeyToken=f8eaf8c36f0d6c03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Webr.WOM5\v4.0_8.1.3.0__f8eaf8c36f0d6c03\Webr.WOM5.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModels\AuthenticateRequest.cs" />
+    <Compile Include="DataModels\AuthenticateResponse.cs" />
+    <Compile Include="DataModels\COR_LOOKUP_LIST_Dto.cs" />
+    <Compile Include="DataModels\COR_LOOKUP_VALUE_RedactedDto.cs" />
+    <Compile Include="DataModels\COR_PERSON_RedactedDto.cs" />
+    <Compile Include="DataModels\ExceptionMessage.cs" />
+    <Compile Include="DataModels\MosaicLookupLists.cs" />
+    <Compile Include="DataModels\MosaicReturnedEntity.cs" />
+    <Compile Include="DataModels\RequestConfigurations.cs" />
+    <Compile Include="DataModels\RISeProtocol.cs" />
+    <Compile Include="DataModels\RISeProtocolSpecies.cs" />
+    <Compile Include="DataModels\UpdateAllocationsDic.cs" />
+    <Compile Include="DataModels\ValueLookupObject.cs" />
+    <Compile Include="DataModels\VIV_ANIMAL_USE_MASTER_Dto.cs" />
+    <Compile Include="DataModels\VIV_ANIMAL_USE_PROTOCOL_Dto.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\HttpClientSyncCall.cs" />
+    <Compile Include="Service\MosaicApiAccessImplementation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="mosaicProxy.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

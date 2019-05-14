@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RISeMosicIntegration", "RISeMosicIntegration\RISeMosicIntegration.csproj", "{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MosaicApiAccessConcoleApp", "MosaicApiAccessConcoleApp\MosaicApiAccessConcoleApp.csproj", "{5156A099-B9B9-4417-A425-866FF6FA2A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C72CB7-2BDC-4A45-B983-F57EAD7BB76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5156A099-B9B9-4417-A425-866FF6FA2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5156A099-B9B9-4417-A425-866FF6FA2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5156A099-B9B9-4417-A425-866FF6FA2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5156A099-B9B9-4417-A425-866FF6FA2A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60258CE1-DA68-4234-9807-3A19A38E822D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://rise-sctfsdev:8080/tfs/rise-customassemblies
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MosaicApiAccessConcoleApp\\MosaicApiAccessConcoleApp.csproj
+		SccProjectName1 = MosaicApiAccessConcoleApp
+		SccLocalPath1 = MosaicApiAccessConcoleApp
+		SccProjectUniqueName2 = RISeMosicIntegration\\RISeMosicIntegration.csproj
+		SccProjectName2 = RISeMosicIntegration
+		SccLocalPath2 = RISeMosicIntegration
+	EndGlobalSection
+EndGlobal
